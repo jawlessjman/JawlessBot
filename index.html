@@ -1,22 +1,74 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>JawlessBot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-      <h1>JawlessBot</h1>
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <span class="mark">J</span>
+        JawlessBot
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+      </nav>
+    </div>
   </header>
-    <main>
-      <p>hi</p>
-    </main>
+
+  <main>
+    <section class="hero">
+      <div class="tag">Discord moderation that feels effortless</div>
+      <h1>JawlessBot keeps your server safe, on-brand, and under control.</h1>
+      <p>
+        A focused moderation bot built for communities that value clarity. JawlessBot tracks warns,
+        blocks bad media, and gives your team the tools to respond quickly without extra noise.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="features.html">Explore features</a>
+        <a class="btn secondary" href="mailto:jawlessbot@jaredjohnston.com">Contact</a>
+      </div>
+    </section>
+
+    <section id="features" class="card-grid">
+      <article class="card">
+        <h3>Precision warns</h3>
+        <p>User IDs are tracked per-server so you can see history without digging through logs.</p>
+      </article>
+      <article class="card">
+        <h3>Media guard</h3>
+        <p>Server-specific banned media keeps your community on-brand and free of unwanted content.</p>
+      </article>
+      <article class="card">
+        <h3>Transparent policy</h3>
+        <p>Privacy and terms are clear and easy to find—no guessing about how your data is handled.</p>
+      </article>
+    </section>
+  </main>
+
   <footer>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="term-of-service.html">Terms of Service</a>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> JawlessBot</span>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+        <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

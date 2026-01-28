@@ -1,26 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<main>
-  <p>
-    The JawlessBot team is dedicated to keeping your information secure and take this seriously. To learn more about our privacy policy, read the following.
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <span class="mark">J</span>
+        JawlessBot
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
 
-    All data being collected is laid out here and as to why the data is being collected.
+  <main>
+    <section class="content-surface">
+      <h1>Privacy Policy</h1>
+      <p>
+        The JawlessBot team is dedicated to keeping your information secure and take this seriously. To learn more about our privacy policy, read the following.
 
-    The following information is saved:
-    - User Ids (These are used for storing user warns in a given server)
-    - Server Ids (These are saved for knowing which server has certain users warns and which banned media is for which server)
+        All data being collected is laid out here and as to why the data is being collected.
 
-    This Data is collected and stored as necessary to provide the bots functionality
+        The following information is saved:
+        - User Ids (These are used for storing user warns in a given server)
+        - Server Ids (These are saved for knowing which server has certain users warns and which banned media is for which server)
 
-    For any questions or inquiries please send a detailed email to <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>, and we will try to resolve your concerns.
-  </p>
-</main>
+        This Data is collected and stored as necessary to provide the bots functionality
+
+        For any questions or inquiries please send a detailed email to <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>, and we will try to resolve your concerns.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> JawlessBot</span>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+        <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

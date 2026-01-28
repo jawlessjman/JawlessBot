@@ -1,35 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms of Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 style="justify-content: center">Terms of Service</h1>
-<main>
-  <p>
-    Effective Date: September 16, 2024.
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <span class="mark">J</span>
+        JawlessBot
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
 
-    <br><br><b>General</b><br>
+  <main>
+    <section class="content-surface">
+      <h1>Terms of Service</h1>
+      <p>
+        Effective Date: September 16, 2024.
 
-    By inviting this discord bot to your server, you are agreeing that you have read, understood and accepted the terms of server.
+        <br><br><b>General</b><br>
 
-    <br><br><b>Terms</b><br>
+        By inviting this discord bot to your server, you are agreeing that you have read, understood and accepted the terms of service.
 
-    You must not use the bot in any way that breaks Discord's terms of service, which can be found at <a href="https://discord.com/terms">https://discord.com/terms</a>.
+        <br><br><b>Terms</b><br>
 
-    <br><br><b>Changes to the terms of service</b><br>
+        You must not use the bot in any way that breaks Discord's terms of service, which can be found at <a href="https://discord.com/terms">https://discord.com/terms</a>.
 
-    The terms of service may change, in the event of a change this page will be updated to reflect the new terms of service. It is recommended that you check this page
-    to see if there are any new updates to the terms of service.
+        <br><br><b>Changes to the terms of service</b><br>
 
-    <br><br><b>Contact us</b><br>
+        The terms of service may change, in the event of a change this page will be updated to reflect the new terms of service. It is recommended that you check this page
+        to see if there are any new updates to the terms of service.
 
-    For any questions or inquiries please send a detailed email to <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>, and we will try to resolve your concerns.
+        <br><br><b>Contact us</b><br>
 
-  </p>
-</main>
+        For any questions or inquiries please send a detailed email to <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>, and we will try to resolve your concerns.
 
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> JawlessBot</span>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+        <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

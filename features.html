@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JawlessBot Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <span class="mark">J</span>
+        JawlessBot
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">What JawlessBot can do</div>
+      <h1>Server safety, clean audio, and playful moments in one bot.</h1>
+      <p>
+        Built for Discord communities that want guardrails without clutter. Moderation and audio features
+        are available in servers; informational and fun commands also work in DMs.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="https://discord.com/discovery/applications/1217642728540737547" target="_blank" rel="noopener">Request access</a>
+        <a class="btn secondary" href="term-of-service.html">Review terms</a>
+      </div>
+    </section>
+
+    <section class="card-grid">
+      <article class="card">
+        <h3>Warnings</h3>
+        <p>Issue and track user warnings per server so moderators have context before acting.</p>
+      </article>
+      <article class="card">
+        <h3>Kicks, Bans & Purges</h3>
+        <p>Remove troublemakers quickly and mass delete recent messages with purge for fast channel cleanup (server-only).</p>
+      </article>
+      <article class="card">
+        <h3>Word & Phrase Blocking</h3>
+        <p>Use Discord AutoMod to ban certain words or phrases and keep channels on-brand.</p>
+      </article>
+      <article class="card">
+        <h3>Media Playback</h3>
+        <p>Play videos or audio in voice channels for music, announcements, or shared listening sessions.</p>
+      </article>
+      <article class="card">
+        <h3>Steam Lookups</h3>
+        <p>Pull player details via the Steam API to verify profiles or share game stats at a glance.</p>
+      </article>
+      <article class="card">
+        <h3>Fun Commands</h3>
+        <p>Drop quotes or videos from community favorites like Sparky or MeowJam to keep chats lively.</p>
+      </article>
+    </section>
+
+    <section class="content-surface">
+      <h2>Where commands work</h2>
+      <p><b>Servers only:</b> warnings, kicks, bans, purge message cleanups, word/phrase blocking, and voice-channel media playback rely on server context and permissions.</p>
+      <p><b>Servers & DMs:</b> Steam lookups and the fun quote/video commands work anywhere, so members can use them privately or in-channel.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> JawlessBot</span>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="term-of-service.html">Terms of Service</a>
+        <a href="mailto:jawlessbot@jaredjohnston.com">jawlessbot@jaredjohnston.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
